@@ -31,16 +31,7 @@ namespace LibraryTheatre
                 AvailablePerfs.Add(performance, temp);
             }
         }
-        //public void DeleteTickets(Performance performance, DateTime dateTime)
-        //{
-        //    foreach (TicketsController ticketsController in AvailablePerfs[performance])
-        //    {
-        //        if (ticketsController.DateTime == dateTime)
-        //        {
-        //            AvailablePerfs.Remove(performance);
-        //        }
-        //    }
-        //}
+     
         public bool BuyTicket(Performance performance, DateTime dateTime)
         {
             if (AvailablePerfs.ContainsKey(performance))
